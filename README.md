@@ -26,7 +26,7 @@ The app should have two views:
 - List View
     - a scrollable list of phonebook entries
     - each entry contains a profile pic (a circle with the person's initials), full name and phone number
-    - a search bar that filters the list to only entries that contain the search query in either the name or number
+    - a search bar that filters the list to only entries that contain the search query in the person's name
     - clicking a person opens the detail view
 - Detail View
     - a form with editable input fields for all data pertaining to a single person
@@ -35,12 +35,14 @@ The data to be displayed should be fetched from our mock API, documented below.
 
 The app should use responsive design and should work on display sizes down to 300 px.
 
+
 ### Bonus Features
 Below is a list of possible additions to the app. Implement them if you want, depending on your remaining time. If you have your own ideas you can do those instead.
 
-- Add a Delete button in detail view. Upon clicking it, make the appropriate request to the API and display a toast feedback message that disappears after a few seconds. (The person will not actually be deleted, it should still show up in the list since this is a mock api)
+- Add the ability to change the sorting order (ascending or descending) in the list view.
 - In the list view display a star next to names of people that are marked as favorite. The favorites should always be on top of the list.
-- Add some unit tests or e2e tests. We recommend using Cypress.
+- Add a Delete button in detail view. Upon clicking it, make the appropriate request to the API and display a toast feedback message that disappears after a few seconds. (The person will not actually be deleted, it should still show up in the list since this is a mock api)
+- Add some unit tests or e2e tests for the search functionality. We recommend using Cypress.
 
 
 ### API specification
