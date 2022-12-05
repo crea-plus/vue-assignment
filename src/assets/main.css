@@ -1,5 +1,41 @@
 @import "./base.css";
+@import "./variables.scss";
+@import "bootstrap";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.loading-container {
+    position:        fixed;
+    min-height:      60vh;
+    display:         flex;
+    justify-content: center;
+    align-items:     center;
+    left:            0;
+    right:           0;
+    top:             0;
+    bottom:          0;
+    background:      rgba(255, 255, 255, 0.9);
+    z-index:         999;
+}
+
+.person-avatar {
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    flex-direction:  column;
+    width:           3.4rem;
+    height:          3.4rem;
+    border-radius:   50%;
+    background:      #3f3f3f;
+    color:           #e5e5e5;
+    border:          .1rem solid #1f1f1f;
+    font-weight:     bold;
+}
+
+.person-avatar.large {
+    width:     10rem;
+    height:    10rem;
+    font-size: 4rem;
+}
+
+.c-pointer {
+    cursor: pointer;
+}
