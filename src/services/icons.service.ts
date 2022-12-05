@@ -1,4 +1,4 @@
-import { library } from '@fortawesome/fontawesome-svg-core';
+import { library } from "@fortawesome/fontawesome-svg-core";
 import {
   faXmark,
   faCheck,
@@ -7,7 +7,11 @@ import {
   faCircleXmark,
   faUser,
   faHandshake,
-} from '@fortawesome/free-solid-svg-icons';
+  faSpinner,
+  faTimes,
+  faArrowLeft,
+  faSave
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function initIcons() {
   library.add(
@@ -18,5 +22,9 @@ export default function initIcons() {
     faCircleXmark,
     faUser,
     faHandshake,
+    faSpinner,
+    faTimes,
+    faArrowLeft,
+    faSave
   );
 }
