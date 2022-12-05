@@ -19,7 +19,7 @@ export const usePersonsStore = defineStore( {
 
     loadDataFromAPI() {
 
-      return axios.get( "https://dev.prahec.com/temp/test.json.php" )
+      return axios.get( "https://creaplus.free.beeceptor.com/persons" )
         .then( response => {
 
           this.list   = response.data;
