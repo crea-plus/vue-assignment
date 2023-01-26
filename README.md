@@ -48,7 +48,7 @@ Below is a list of possible additions to the app. Implement them if you want, de
 ### API specification
 api url: https://creaplus.free.beeceptor.com
 
-The api only has 2 endpoints. It is a mock api - it always returns the same response, the data is static and not editable.
+The api only has 2 endpoints. It is a mock api - it always returns the same response, the data is static and not editable. It has a limit of 50 requests per day - working around this is part of the challenge :)
 
 `GET /persons` returns a list of all persons in the phonebook.
 Example response:
