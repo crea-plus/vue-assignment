@@ -3,7 +3,7 @@ Make a simple Phonebook app in Vue.js.
 
 Fork this starter project repo, make the app according to the specification below and then submit a Pull Request. We will get back to you with feedback.
 
-Limit yourself to 1 or at most 2 hours of work. You do not have to finish all the requirements - after the time is up, submit the PR and call it a day. Focus on a small set of features and make those work well, write clean code and make use of appropriate design principles. This is more important than finishing everything. On the other hand if you find the task too simple and finish early, feel free to surprise us with some additional features.
+Limit yourself to 1 or at most 2 hours of work. You do not have to finish all the requirements - after an hour is up, check the state of your work, finish up what you are doing and submit a PR. Focus on a small set of features and make those work well, write clean code and make use of appropriate design principles. This is more important than finishing everything. On the other hand if you find the task too simple and finish early, feel free to surprise us with some additional features.
 
 ### Stack
 You are encouraged to use the provided tech stack outlined below. However, you can switch out any dependencies if you would like to use something else. Or you can just start from scratch - you do you! The only limit is to stick to Vue.js (2 or 3).
@@ -36,8 +36,8 @@ The data to be displayed should be fetched from our mock API, documented below.
 The app should use responsive design and should work on display sizes down to 300 px.
 
 
-### Bonus Features
-Below is a list of possible additions to the app. Implement them if you want, depending on your remaining time. If you have your own ideas you can do those instead.
+### Overachiever Features
+If you are very fast, you can implement some of these additional features. Of course if you have your own ideas you can do those instead.
 
 - Add the ability to change the sorting order (ascending or descending) in the list view.
 - In the list view display a star next to names of people that are marked as favorite. The favorites should always be on top of the list.
@@ -48,7 +48,7 @@ Below is a list of possible additions to the app. Implement them if you want, de
 ### API specification
 api url: https://creaplus.free.beeceptor.com
 
-The api only has 2 endpoints. It is a mock api - it always returns the same response, the data is static and not editable. It has a limit of 50 requests per day - working around this is part of the challenge :)
+The api only has 2 endpoints. It is a mock api - it always returns the same response, the data is static and not editable. It is limited to 50 requests per day - working around this limit is part of the challenge :P
 
 `GET /persons` returns a list of all persons in the phonebook.
 Example response:
