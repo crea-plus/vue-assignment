@@ -71,6 +71,7 @@ Example response:
 ]
 ```
 
+
 `DELETE /persons` deletes a person from the phonebook.
 Example response:
 ```
