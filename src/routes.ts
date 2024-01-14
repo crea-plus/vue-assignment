@@ -1,15 +1,25 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import MainView from './views/MainView.vue';
+import { createRouter, createWebHashHistory, type RouteRecordRaw } from 'vue-router';
+import ListView from './views/ListView.vue';
+import DetailView from './views/DetailView.vue';
 
-const routes = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: MainView,
-    },
-  ],
+const routes: RouteRecordRaw[] = [
+  {
+    path: '/',
+    name: 'ListView',
+    component: ListView,
+    children: [
+      {
+        path: '/details/:id',
+        name: 'DetailView',
+        component: DetailView,
+      },
+    ]
+  }
+];
+
+const router = createRouter({
+  history: createWebHashHistory(),
+  routes: routes
 });
 
-export default routes;
+export default router;
