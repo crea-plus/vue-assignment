@@ -1,13 +1,16 @@
 <template>
-  <div class="flex justify-center mt-5 cursor-pointer">
-    <div class="contact-list">
-      <input v-model="searchQuery" @keyup.enter="search()" placeholder="Search..."
-        class="w-full p-2 mb-4 border border-gray-300 rounded" />
+  <div class="flex flex-col sm:flex-row justify-center mt-5 cursor-pointer">
+    <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mb-4">
+      <div class="mb-4">
+        <input v-model="searchQuery" @keyup.enter="search()" placeholder="Search..."
+          class="w-full p-2 border border-gray-300 rounded" />
+      </div>
+
       <div v-for="contact in contacts" class="mb-4">
         <ContactList :contact="contact" @click="showDetail(contact.id)" />
       </div>
     </div>
-    <div class="ml-5">
+    <div class="ml-0 sm:ml-5 mt-4 sm:mt-0">
       <router-view v-slot="{ Component, route }">
         <transition :name="'fade'" :key="route.path">
           <component :is="Component" />
