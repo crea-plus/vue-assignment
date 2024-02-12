@@ -2,6 +2,7 @@
   "extends": "./tsconfig.app.json",
   "exclude": [],
   "compilerOptions": {
+    "ignoreDeprecations": "5.0", // needed this to suppress the deprecation warning... vscode was not happy.
     "composite": true,
     "lib": [],
     "types": ["node", "jsdom"]
