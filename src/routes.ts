@@ -9,6 +9,11 @@ const routes = createRouter({
       name: 'home',
       component: MainView,
     },
+    {
+      path: '/:personId',
+      name: 'detail',
+      component: import('./views/DetailView.vue'), // Lazy-loaded when the route is visited.
+    },
   ],
 });
 
