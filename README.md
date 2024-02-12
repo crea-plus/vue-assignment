@@ -23,13 +23,20 @@ You are encouraged to use the provided tech stack outlined below. However, you c
 ### Core Requirements
 The app should have two views:
 
-- List View
-    - a scrollable list of phonebook entries
-    - each entry contains a profile pic (a circle with the person's initials), full name and phone number
-    - a search bar that filters the list to only entries that contain the search query in the person's name
-    - clicking a person opens the detail view
-- Detail View
+- List View // / route
+    - a scrollable list of phonebook entries // PhoneBookList
+    - each entry contains a profile pic (a circle with the person's initials), full name and phone number // PhoneBookEntry
+    - a search bar that filters the list to only entries that contain the search query in the person's name // PhoneBookSearch
+    - clicking a person opens the detail view // should use router-link
+- Detail View // /:id route?
     - a form with editable input fields for all data pertaining to a single person
+    - a button to save the changes
+    - a button to go back to the list view probably ? // should use router-link
+
+
+1. The app should use the provided mock API to fetch the data.
+2. store the data in a global state using Pinia.
+3. create 3 features? (search, list, detail) as separate components.
 
 The data to be displayed should be fetched from our mock API, documented below.
 
