@@ -1,14 +1,11 @@
 <template>
-  <div class="text-center mt-10">
-    <h1 class="mb-2 text-lg">Hello world!</h1>
-    <font-awesome-icon icon="fa-solid fa-handshake" size="2xl" />
-  </div>
+  <ContainerLayout class="h-screen overflow-hidden">
+      <!-- here will be the search -->
+      <PhoneBookList />
+  </ContainerLayout>
 </template>
 
-<script>
-export default {
-  name: 'MainView',
-};
+<script lang="ts" setup>
+import { ContainerLayout } from '@/layouts'
+import { PhoneBookList } from '@/features/PhoneBookList'
 </script>
-
-<style scoped></style>

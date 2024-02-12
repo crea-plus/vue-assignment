@@ -1,5 +1,5 @@
 <template>
-    <component :is="tag" class="flex flex-col container mx-auto my-5 px-5 md:px-0">
+    <component :is="tag" class="container flex flex-col mx-auto p-5 md:px-0">
         <slot />
     </component>
 </template>

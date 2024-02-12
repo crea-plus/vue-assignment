@@ -7,6 +7,8 @@ import {
   faCircleXmark,
   faUser,
   faHandshake,
+  faStar,
+  faChevronRight
 } from '@fortawesome/free-solid-svg-icons';
 
 export default function initIcons() {
@@ -18,5 +20,7 @@ export default function initIcons() {
     faCircleXmark,
     faUser,
     faHandshake,
+    faStar,
+    faChevronRight
   );
 }
