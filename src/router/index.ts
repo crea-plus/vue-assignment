@@ -10,8 +10,8 @@ const router = createRouter({
       component: MainView
     },
     {
-      path: '/detail/:id',
-      name: 'detail',
+      path: '/details/:id',
+      name: 'details',
       //lazy loading
       component: () => import('@/views/DetailView.vue')
     }
